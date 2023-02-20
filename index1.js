@@ -10,3 +10,5 @@ xhr.onload = () => {
 xhr.send()
 
 console.log(`Fuck...`)
+console.log(`Fuck...`)
+console.log(`Fuck...`)
