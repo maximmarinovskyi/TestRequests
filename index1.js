@@ -9,3 +9,4 @@ xhr.onload = () => {
 
 xhr.send()
 
+console.log(`Fuck...`)
