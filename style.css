@@ -1,0 +1,28 @@
+html,
+body {
+    background-color: rgb(247, 234, 217);
+}
+
+header,
+main,
+footer {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 100%;
+    font-size: 5em;
+    text-align: center;
+    box-shadow: rgb(168, 147, 147) 10px 10px 10px 10px;
+}
+
+header {
+    background-color: yellow;
+}
+
+main {
+    background-color: lightblue;
+}
+
+footer {
+    background-color: lightgreen;
+}
