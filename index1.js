@@ -28,4 +28,4 @@ function randInt(min, max) {
     return Math.floor(rand)
 }
 
-// window.location.reload()
+console.log(`/////////////////////////////////////////////////////////////////////////`)
