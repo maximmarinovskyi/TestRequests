@@ -1,21 +1,29 @@
-const xhr1 = new XMLHttpRequest();
-const xhr2 = new XMLHttpRequest();
-const xhr3 = new XMLHttpRequest();
+let smileOne = document.querySelector(".smile_one")
+let smileTwo = document.querySelector(".smile_one")
+let smileThree = document.querySelector(".smile_one")
 
-xhr1.open("get", "https://jsonplaceholder.typicode.com/todos/1", true)
+let header = document.querySelector("header")
+let main = document.querySelector("main")
+let footer = document.querySelector("footer")
 
-xhr1.onload = () => {
-    console.log(`xhr 1 readystste condition is: ${xhr1.readyState}`)
-    console.log(`xhr 1 readystste condition is: ${xhr1.response}`)
+smileOne.addEventListener("click", () => {
+    randInt(0, 255)
+    changeColorHeader()
+})
+smileTwo.addEventListener("click", changeColorMain)
+smileThree.addEventListener("click", changeColorFooter)
+
+function changeColorHeader() {
+    this.style.backgroundColor = `rgb(${randInt(0, 255)}, ${randInt(0, 255)}, ${randInt(0, 255)})`
+}
+function changeColorMain() {
+    this.style.backgroundColor = `rgb(${randInt(0, 255)}, ${randInt(0, 255)}, ${randInt(0, 255)})`
+}
+function changeColorFooter() {
+    this.style.backgroundColor = `rgb(${randInt(0, 255)}, ${randInt(0, 255)}, ${randInt(0, 255)})`
 }
 
-xhr1.send()
-////////////////////////////////////////////////////////////////////
-xhr2.open("get", "https://jsonplaceholder.typicode.com/posts/1")
-
-xhr2.onload = () => {
-    console.log(`xhr 2 readystste condition is: ${xhr2.readyState}`)
-    console.log(`xhr 2 readystste condition is: ${xhr2.response}`)
+function randInt(min, max) {
+    let rand = min + Math.random() * (max + 1 - min)
+    return Math.floor(rand)
 }
-
-xhr2.send()
