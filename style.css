@@ -21,9 +21,21 @@ header {
 }
 
 main {
-    background-color: lightblue;
+    background-color: yellow;
 }
 
 footer {
     background-color: lightgreen;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.blue {
+    background-color: lightblue;
+}
+
+.white {
+    background-color: white;
 }
