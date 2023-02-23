@@ -1,6 +1,7 @@
 html,
 body {
     background-color: rgb(247, 234, 217);
+    box-sizing: border-box;
 }
 
 header,
@@ -17,13 +18,25 @@ footer {
 }
 
 header {
-    background-color: yellow;
+    background-color: red;
 }
 
 main {
-    background-color: yellow;
+    background-color: rgb(236, 236, 60);
 }
 
 footer {
-    background-color: lightgreen;
+    background-color: rgb(43, 57, 250);
+    color: white;
+}
+
+.container {
+    background-color: orangered;
+    height: auto;
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2em;
+    border: 3px solid grey;
 }
