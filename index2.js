@@ -42,3 +42,18 @@ xhrComments.send()
 xhrUsers.onerror = function (err) {
     console.error(err)
 }
+
+
+
+const xhrUsers = new XMLHttpRequest();
+xhrUsers.open("get", "https://jsonplaceholder.typicode.com/users/1", false)
+xhrUsers.onload = function () {
+    console.log(`Users - status = ${this.status}`)
+    console.log(`Users - readystate = ${this.readyState}`)
+    console.log(`User responce = ${this.response}`)
+    console.log(`-------------------------------`)
+}
+xhrUsers.onerror = function (err) {
+    console.error(err)
+}
+xhrUsers.send()
